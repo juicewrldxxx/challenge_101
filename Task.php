@@ -17,6 +17,9 @@
     div.a {
     text-align: center;
     }
+    div.b {
+    text-align: center;
+    }
     .pd {
       height: 100vh;
       display: flex;
@@ -70,8 +73,10 @@
     </div
     <div style="width: 500px;" class="bg-warning row mt-4">
     <ul class="list-group mt-2 m-0 p-0" style="width: 400px;">
-    
-/* render data frome database */
+    <div class="b">
+    <h2>Current Tasks</h2>
+    </div>
+
       <?php
         $q = "SELECT * FROM tasks";
         $query = mysqli_query($conn, $q);
